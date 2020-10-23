@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate_database</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<!-- <property name="connection.pool_size">1</property> -->
+
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+
+
+
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<!-- create-drop , create , update -->
+		<property name="hbm2ddl.auto">update</property>
+		<mapping class="model.User" />
+		<mapping class="model.Development_emp" />
+		<mapping class="model.Testing_head" />
+		<mapping class="model.Testing_emp" />
+		<mapping class="model.Recruitment_head" />
+		<mapping class="model.Recruitment_emp" />
+		<mapping class="model.Marketing_head" />
+		<mapping class="model.Marketing_emp" />
+		<mapping class="model.Employee" />
+		<mapping class="model.Reply_emp"/>
+		<mapping class="model.Development_head" />
+		<mapping class="model.Dep_head" />
+	</session-factory>
+</hibernate-configuration>

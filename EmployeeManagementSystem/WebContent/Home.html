@@ -1,0 +1,36 @@
+<!-- *Home page wherein to select the designation and proceed further.
+     *Selecting the designation is only Required/Necessary if new User
+     has to be registered  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Management System</title>
+</head>
+<body style="background-color: #90A4AE;">
+	<h1 style="text-align: center; color: #ffffff">Welcome to the
+		TechBoos Employee management system.</h1>
+	<h3 style="text-align: center; color: #ffffff">Proceed further
+		according to your designation.</h3>
+	<h4 style="text-align: center; color: #ffffff">Select Designation
+		only if you want to register as this selection would take part in your
+		registration process.</h4>
+	<div align="center"
+		style="padding: 40px; height: 100px; background-color: #62757F;">
+
+		<form action="ServletHome" method="get">
+			<select name="designation"
+				style="width: 100%; padding: 16px 20px; border: none; border-radius: 4px; background-color: #1C313A; color: #ffffff">
+				<option value="Admin">ADMIN</option>
+				<option value="DepartmentHead">DEPARTMENT HEAD</option>
+				<option value="Employee">EMPLOYEE</option>
+			</select> <input type="submit" value="Proceed.."
+				style="margin-top:120px;background-color: #1C313A;border-radius: 4px; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 2px; cursor: pointer;" />
+		     
+		</form>
+
+	</div>
+</body>
+</html>
+
+
